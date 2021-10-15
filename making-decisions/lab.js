@@ -64,10 +64,18 @@ let rain = true
 */
 
 //CODE HERE
-if (temperature >= 80 && rain === true) {
+if (temperature >= 80 && rain == true) {
   console.log("Wear a t-shirt and take an umbrella.")
-} else if {
-
+} else if (temperature >= 60 && temperature <= 80 && rain == true) {
+  console.log("One should wear a rain-jacket.")
+} else if (temperature < 60 && rain == true) {
+  console.log("One should wear a jacket and carry an umbrella.")
+} else if (temperature >= 80 && rain == false) {
+  console.log("T-shirt and shades.")
+} else if (temperature >= 60 && temperature <= 80 && rain == false) {
+  console.log("Cool weather clothing.")
+} else {
+  console.log("Grab a coat.")
 }
 
 ////////// PROBLEM 5 //////////
@@ -78,6 +86,9 @@ if (temperature >= 80 && rain === true) {
 
 //CODE HERE
 
+for (let i = 1; i <= 10; i++) {
+  console.log("hello")
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -87,6 +98,9 @@ if (temperature >= 80 && rain === true) {
 
 //CODE HERE
 
+for (let i = 1; i <= 10; i++) {
+  console.log(i)
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -95,6 +109,11 @@ if (temperature >= 80 && rain === true) {
 */
 
 //CODE HERE
+
+
+for (let i = 10; i >= 1; i--) {
+  console.log(i)
+}
 
 let score = 0
 let passingScore = 7
@@ -107,6 +126,11 @@ let passingScore = 7
 
 //CODE HERE
 
+while (score < passingScore) {
+  console.log("Your score is not high enoughYour score is not high enough.")
+  score++
+}
+
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -118,12 +142,26 @@ let passingScore = 7
 
 //CODE HERE
 
+let changeMyMind = true;
+
+console.log(changeMyMind);
+
+if (changeMyMind == true) {
+  changeMyMind = !(changeMyMind != false)
+} else {
+  changeMyMind = !(changeMyMind != true)
+}
+
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 //CODE HERE
-
-
+if (changeMyMind == true) {
+  changeMyMind = !(changeMyMind != false)
+} else {
+  changeMyMind = !(changeMyMind != true)
+}
+console.log(changeMyMind)
 
 ////////// ADVANCED PROBLEMS //////////
 
@@ -133,3 +171,4 @@ let z = 5
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+
